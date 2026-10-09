@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cat Viewer 🐾</title>
+    <!-- Google Fonts & FontAwesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <h1><i class="fa-solid fa-cat"></i> Random Cat Viewer</h1>
+            <p>Infinite cuddles and cuteness delivered to your screen!</p>
+        </header>
+
+        <!-- Main Action Area -->
+        <main class="action-wrapper">
+            <!-- Loading Spinner / State -->
+            <div id="loader" class="loader hidden">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <span>Finding a fluffy friend...</span>
+            </div>
+
+            <!-- Download Button (Acts as both viewer trigger and downloader) -->
+            <button id="download-btn" class="main-download-btn" title="Download Cat Picture">
+                <i class="fa-solid fa-download"></i> Download Cat
+            </button>
+        </main>
+
+        <!-- Controls Footer -->
+        <footer>
+            <button id="next-btn" class="primary-btn">
+                <i class="fa-solid fa-shuffle"></i> Next Cat
+            </button>
+        </footer>
+    </div>
+
+    <!-- Hidden image element used purely to fetch/preload images in background -->
+    <img id="cat-img" class="hidden" alt="Random Cat" crossorigin="anonymous">
+
+    <script src="app.js"></script>
+</body>
+</html>

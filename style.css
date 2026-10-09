@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #ff6b6b;
+    --primary-hover: #fa5252;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --card-bg: #ffffff;
+    --text-color: #2d3748;
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #1a202c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header h1 i {
+    color: var(--primary-color);
+}
+
+header p {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-top: 4px;
+}
+
+/* Action Wrapper */
+.action-wrapper {
+    width: 100%;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 160px;
+}
+
+/* Main Download Button */
+.main-download-btn {
+    width: 100%;
+    background: #2b6cb0;
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(43, 108, 176, 0.3);
+}
+
+.main-download-btn:hover {
+    background: #2c5282;
+    box-shadow: 0 6px 16px rgba(44, 82, 130, 0.4);
+}
+
+.main-download-btn:active {
+    transform: scale(0.98);
+}
+
+/* Loader */
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #4a5568;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.loader i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Next Button Footer */
+footer {
+    width: 100%;
+}
+
+.primary-btn {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.primary-btn:hover {
+    background: var(--primary-hover);
+    box-shadow: 0 6px 16px rgba(250, 82, 82, 0.5);
+}
+
+.primary-btn:active {
+    transform: scale(0.98);
+}
